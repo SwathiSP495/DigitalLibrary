@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/menu.css';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink} from 'react-router-bootstrap';
+import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'react-router-bootstrap';
 import home from "./home.png";
 import account from "./user.png";
 import language from "./language.png";
@@ -23,7 +23,7 @@ export default class Menu extends React.Component {
     }
 
     toggleDropDown() {
-        this.setState({accountDropDown: !this.state.accountDropDown});
+        this.setState({ accountDropDown: !this.state.accountDropDown });
     }
 
     render() {
@@ -33,11 +33,11 @@ export default class Menu extends React.Component {
                     <Nav className="menu-wrapper">
                         <Dropdown isOpen={this.state.accountDropDown} onClick={this.toggleDropDown}>
                             <DropdownToggle nav caret>
-                                <img src={account} className="icon" alt="eproc img"/> Account
+                                <img src={account} className="icon" alt="eproc img" /> Account
                             </DropdownToggle>
                             <DropdownMenu>
                                 <DropdownItem >Login</DropdownItem>
-                                {this.props.isAuthenticated ? (<DropdownItem >Logout</DropdownItem>): null}
+                                {this.props.isAuthenticated ? (<DropdownItem >Logout</DropdownItem>) : null}
                                 <DropdownItem divider />
                                 <DropdownItem href="/library/registration">
                                     Register
@@ -45,18 +45,18 @@ export default class Menu extends React.Component {
                             </DropdownMenu>
                         </Dropdown>
                         <Dropdown isOpen={this.state.dropdownOpenForLanguage}
-                                  onClick={this.toggleLanguage}>
+                            onClick={this.toggleLanguage}>
                             <DropdownToggle nav caret>
-                                <img src={language} className="icon" alt="eproc-img-last-part"/> Language
+                                <img src={language} className="icon" alt="eproc-img-last-part" /> Language
                             </DropdownToggle>
                             <DropdownMenu>
                                 <DropdownItem header>English</DropdownItem>
                             </DropdownMenu>
                         </Dropdown>
                         <NavItem>
-                            <NavLink href="#"><img src={home} className="icon" alt="Home-png"/>Home</NavLink>
+                            <NavLink href="#"><img src={home} className="icon" alt="Home-png" />Home</NavLink>
                         </NavItem>
-                       
+
                     </Nav>
                 </div>
             </div>

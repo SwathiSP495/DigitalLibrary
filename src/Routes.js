@@ -16,6 +16,11 @@ import Student from "./containers/Student";
 import AddStudent from "./containers/AddStudent";
 import AddCategory from "./containers/AddCategory";
 import StudentSuccess from "./containers/StudentSuccess";
+import ViewStudents from "./containers/ViewStudents";
+import IssueHistory from "./containers/IssueHistory";
+import IssuePending from "./containers/IssuePending";
+import StudentUpdate from "./containers/StudentUpdate";
+import SearchCategory from "./containers/SearchCategory";
 
 import AppliedRoute from "./components/AppliedRoute";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
@@ -103,6 +108,36 @@ export default ({ childProps }) => (
       path="/student/success"
       exact
       component={StudentSuccess}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/student/view"
+      exact
+      component={ViewStudents}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/issuehistory"
+      exact
+      component={IssueHistory}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/issue/pending"
+      exact
+      component={IssuePending}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/student/update"
+      exact
+      component={StudentUpdate}
+      props={childProps}
+    />
+     <AuthenticatedRoute
+      path="/library/search"
+      exact
+      component={SearchCategory}
       props={childProps}
     />
     <AuthenticatedRoute

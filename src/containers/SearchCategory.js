@@ -23,7 +23,7 @@ const myStyle = {
     paddingTop: '20px'
 
 }
-const AddCategory = (props) => {
+const SearchCategory = (props) => {
     return (
         <div className="body-wrapper">
             <Row>
@@ -34,11 +34,7 @@ const AddCategory = (props) => {
                 <Col xs="10">
                     <div>
                         <div style={myStyle} class="row">
-                            <center>
-                                <Jumbotron style={{ width: '90rem', height: '10px', backgroundColor: 'white ', paddingTop: '10px' }}>
-                                    <h4 className="success">Category Added Successfully</h4>
-                                </Jumbotron>
-                            </center>
+                           
                             <div>
 
 
@@ -54,7 +50,7 @@ const AddCategory = (props) => {
     );
 };
 
-export default AddCategory;
+export default SearchCategory;
 
 
 

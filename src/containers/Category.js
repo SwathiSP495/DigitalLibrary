@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import Menu from './Menu';
 import Dashboard from "./Dashboard";
@@ -15,7 +15,7 @@ import LoaderButton from "../components/LoaderButton";
 const bg = require('./background.jpg');
 const myStyle = {
     width: '100%',
-    height: '425px',
+    height: '450px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',
@@ -35,7 +35,7 @@ const Category = (props) => {
                         <div style={myStyle} class="row">
                             <div class="col-xs-6">
                                 <Col xs="5">
-                                    <Jumbotron style={{ width: '40rem', height: '250px', backgroundColor: '#06C1E0 ', paddingTop: '10px' }}>
+                                    <Jumbotron style={{ width: '40rem', height: '250px', backgroundColor: '#DDE9EA ', paddingTop: '10px' }}>
                                         <h4 className="search">Add Category</h4>
                                         <hr class="new1" />
                                         <div >
@@ -43,27 +43,25 @@ const Category = (props) => {
                                             <div class="form-group">
 
                                                 <div class="col-lg-8">
-                                                <label>Category:</label>
+                                                    <label>Category:</label>
                                                     <input type="book" class="form-control" name="book" placeholder="add Category" />
                                                 </div>
                                                 <div class="col-lg-8">
-                                                <label>Description:</label>
+                                                    <label>Description:</label>
                                                     <input type="book" class="form-control" name="book" placeholder="Description" />
                                                 </div>
-                                                </div>
-                                                &nbsp;
-                                                &nbsp;
+                                            </div>
+                                            &nbsp;
+                                            &nbsp;
                                                 <div class="form-group">
-                                            <div class="col-lg-8">
+                                                <div class="col-lg-8">
                                                     {/* <Button as="input" type="submit" value="Search"
                                                     >Add</Button> */}
                                                     <LinkContainer to="/library/add">
-                                                    <LoaderButton
-            block
-            bsSize="large"
-            text="Add"
-          />
-          </LinkContainer>
+                                                        <Button>Add</Button>
+                                                           
+                                                       
+                                                    </LinkContainer>
                                                 </div>
                                             </div>
 
@@ -73,7 +71,7 @@ const Category = (props) => {
                             </div>
                             <div class="col-xs-6">
                                 <Col xs="5">
-                                    <Jumbotron style={{ width: '40rem', height: '250px', backgroundColor: '#06C1E0 ', paddingTop: '10px' }}>
+                                    <Jumbotron style={{ width: '40rem', height: '250px', backgroundColor: '#DDE9EA ', paddingTop: '10px' }}>
                                         <h4 className="search">Search Category</h4>
                                         <hr class="new1" />
                                         <div class="form-group">
@@ -87,8 +85,10 @@ const Category = (props) => {
                                             &nbsp;
                                             &nbsp;
                                             <div class="col-lg-8">
+                                            <LinkContainer to="/library/search">
                                                 <Button as="input" type="submit" value="Search"
                                                 >Search</Button>
+                                                </LinkContainer>
                                             </div>
                                         </div>
                                     </Jumbotron>
@@ -96,11 +96,11 @@ const Category = (props) => {
                             </div>
                             <div>
 
-                               
-                    </div>
+
+                            </div>
                         </div>
                     </div>
-                    
+
                 </Col>
 
             </Row>

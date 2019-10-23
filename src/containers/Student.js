@@ -15,7 +15,7 @@ import LoaderButton from "../components/LoaderButton";
 const bg = require('./background.jpg');
 const myStyle = {
     width: '100%',
-    height: '425px',
+    height: '450px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',
@@ -23,6 +23,9 @@ const myStyle = {
 
 }
 const Student = (props) => {
+    
+   
+    
     return (
         <div className="body-wrapper">
             <Row>
@@ -45,8 +48,11 @@ const Student = (props) => {
                             <Button as="input" type="submit" value="Search"
                                                     >Search Students</Button>
                                                     </LinkContainer>
+                                                    <LinkContainer to="/student/view">
                                                     <Button as="input" type="submit" value="Search"
                                                     >View All Students</Button>
+                                                    </LinkContainer>
+                                                    
                                         <h4 className="search">Student Search</h4>
                                         <hr class="new1" />
                                         <div >
@@ -64,7 +70,7 @@ const Student = (props) => {
 <div class="form-group">
 <div class="col-lg-6">
     <Button as="input" type="submit" value="Search"
-    >Search</Button>
+     onClick={this.handleButton}>Search</Button>
 </div>
 </div>
 

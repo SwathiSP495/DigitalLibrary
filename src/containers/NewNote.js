@@ -13,7 +13,7 @@ import { MetadataService } from 'aws-sdk/global';
 const bg = require('./background.jpg');
 const myStyle = {
     width: '100%',
-    height: '425px',
+    height: '450px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',
@@ -33,7 +33,7 @@ const Home = (props) => {
                         <div style={myStyle} class="row">
                             <div class="col-xs-6">
                                 <Col xs="5">
-                                    <Jumbotron style={{ width: '40rem', height: '200px', backgroundColor: 'white', paddingTop: '10px' }}>
+                                    <Jumbotron style={{ width: '40rem', height: '200px', backgroundColor: '#DDE9EA', paddingTop: '10px' }}>
                                         <h4 className="search">Search book</h4>
                                         <hr class="new1" />
                                         <div >
@@ -61,7 +61,7 @@ const Home = (props) => {
                             </div>
                             <div class="col-xs-6">
                                 <Col xs="5">
-                                    <Jumbotron style={{ width: '40rem', height: '200px', backgroundColor: 'white', paddingTop: '10px' }}>
+                                    <Jumbotron style={{ width: '40rem', height: '200px', backgroundColor: '#DDE9EA', paddingTop: '10px' }}>
                                         <h4 className="search">Search barcode</h4>
                                         <hr class="new1" />
                                         <div class="form-group">

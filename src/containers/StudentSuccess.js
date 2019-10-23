@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row} from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
 import Menu from './Menu';
 import Dashboard from "./Dashboard";
@@ -16,14 +16,14 @@ import './Settings.css';
 const bg = require('./background.jpg');
 const myStyle = {
     width: '100%',
-    height: '425px',
+    height: '450px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',
     paddingTop: '20px'
 
 }
-const Student = (props) => {
+const StudentSuccess = (props) => {
     return (
         <div className="body-wrapper">
             <Row>
@@ -35,17 +35,17 @@ const Student = (props) => {
                     <div>
                         <div style={myStyle} class="row">
                             <center>
-                        <Jumbotron style={{ width: '90rem', height: '10px', backgroundColor: 'white ', paddingTop: '10px' }}>
-                            <h4 className="success">Student Details Added Successfully</h4>
-                            </Jumbotron>
+                                <Jumbotron style={{ width: '90rem', height: '10px', backgroundColor: 'white ', paddingTop: '10px' }}>
+                                    <h4 className="success">Student Details Added Successfully</h4>
+                                </Jumbotron>
                             </center>
                             <div>
 
-                               
-                    </div>
+
+                            </div>
                         </div>
                     </div>
-                    
+
                 </Col>
 
             </Row>
@@ -54,7 +54,7 @@ const Student = (props) => {
     );
 };
 
-export default Student;
+export default StudentSuccess;
 
 
 
