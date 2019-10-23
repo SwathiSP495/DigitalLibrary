@@ -1,0 +1,18 @@
+.NewNote form {
+  padding-bottom: 15px;
+}
+hr.new1 {
+  border-top: 6px solid red;
+}
+
+.NewNote form textarea {
+  height: 300px;
+  font-size: 24px;
+}
+
+.Carousel-item{
+  height: 10px;
+} 
+.Carousel-item img{
+  height: 50px;
+}

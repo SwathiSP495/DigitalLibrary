@@ -1,0 +1,18 @@
+.menu-wrapper{
+    flex-direction: row-reverse;
+}
+.menu-wrapper > .nav-tabs{
+    border-bottom: none !important;
+}
+.menu-wrapper > .nav-item:hover{
+    border-bottom: 1px solid rgb(26, 165, 253);
+}
+.menu-wrapper .dropdown:hover{
+    border-bottom: 1px solid rgb(26, 165, 253);
+}
+.icon{
+    max-width: 100%;
+    width: 20px;
+    height: 22px;
+    margin: -4px 10px !important;
+}

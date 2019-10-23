@@ -1,0 +1,260 @@
+.wizard-wrapper{
+    clearfix:both;
+    margin: 0em 2em;
+    padding: 1em;
+}
+
+.tabbable{
+    margin-left: 3.5em;
+}
+.nav-tabs .wizard {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    margin: 1em auto;
+    border-radius: .25em;
+    clear: both;
+    border-bottom: none;
+}
+
+.nav-tabs .wizard li {
+    width: 100%;
+    float: none;
+    margin-bottom: 3px;
+    height: 60px;
+}
+
+.nav-tabs.wizard li>* {
+    position: relative;
+    padding: 1em .8em .8em 2.5em;
+    color: #999999;
+    background-color: #deeee2;
+    border-color: #dedede;
+}
+
+.nav-tabs.wizard li.completed>* {
+    color: #fff !important;
+    background-color: #96c03d !important;
+    border-color: #96c03d !important;
+    border-bottom: none !important;
+    top: 1px;
+}
+
+.nav-tabs.wizard li.disabled>* {
+    color: rgba(0,0,0, 0.7) !important;
+    background-color: #b4d8ea !important;
+    border-color: #b4d8ea  !important;
+    border-bottom: none !important;
+    top: 1px;
+}
+
+.nav-tabs.wizard li.active>* {
+    color: #fff !important;
+    background-color: #159bc8 !important;
+    border-color: #159bc8 !important;
+    border-bottom: none !important;
+    top: 1px;
+}
+
+.nav-tabs.wizard li::after:last-child {
+    border: none;
+}
+
+.nav-tabs.wizard > li > a {
+    opacity: 1;
+    font-size: 14px;
+}
+
+.nav-tabs.wizard a:hover {
+    color: #fff;
+    background-color: #2c3f4c;
+    border-color: #2c3f4c
+}
+
+span.nmbr {
+    display: inline-block;
+    padding: 10px 0px 0 0;
+    background: #ffffff;
+    width: 35px;
+    line-height: 100%;
+    height: 35px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+@media(min-width:780px) {
+    .nav-tabs.wizard li {
+        position: relative;
+        padding: 5px;
+        margin: 4px -6px 4px 0;
+        width: 139px;
+        height: 60px !important;
+        float: left;
+        text-align: center;
+    }
+    .nav-tabs.wizard li.active a {
+        height: 40px !important;
+        padding-top: 15px;
+    }
+    .nav-tabs.wizard li::after,
+    .nav-tabs.wizard li>*::after {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 100%;
+        width: 0;
+        height: 0;
+        border: 22px solid transparent;
+        border-right-width: 0;
+        /*border-left-width: 20px*/
+    }
+    .nav-tabs.wizard li::after {
+        z-index: 1;
+        /*-webkit-transform: translateX(4px);
+        -moz-transform: translateX(4px);
+        -ms-transform: translateX(4px);
+        -o-transform: translateX(4px);!*
+        transform: translateX(4px);*!*/
+        border-left-color: #fff;
+        margin: 0
+    }
+    .nav-tabs.wizard li>*::after {
+        z-index: 2;
+        border-left-color: inherit
+    }
+    .nav-tabs.wizard > li:nth-of-type(1) > a {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .nav-tabs.wizard li:last-child a {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .nav-tabs.wizard li:last-child {
+        margin-right: 0;
+    }
+    .nav-tabs.wizard li:last-child a:after,
+    .nav-tabs.wizard li:last-child:after {
+        content: "";
+        border: none;
+    }
+    span .nmbr {
+        display: block;
+    }
+}
+
+/*################################        Form            ######################################
+################################################################################################*/
+
+.eproc-tabpane-wrapper{
+    background:linear-gradient(to right, rgb(184, 218, 235),rgb(0, 122, 173));
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.tab-pane-heading{
+    text-align: center;
+    color: white;
+    margin: 10px !important;
+    margin-top: 0px !important;
+}
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Wizard styles $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$*/
+
+.wizard-row{
+    display: inline-flex;
+}
+
+.register{
+    margin-top: 10px;
+}
+
+.wizard-btn-group{
+    margin-top: 10px;
+    padding: 10px 0px;
+}
+.wizard-btn-group Button{
+    margin-left: 10px;
+}
+
+.warning-msg{
+    color: #ff0000;
+    font-weight: bold;
+}
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ Terms and Condition ########  Step  ######## $$$$$$$$$$$$$$$$$$$$$$*/
+
+.eproc-terms-conditions{
+    height: 250px;
+    overflow-y: scroll;
+    background: white;
+    padding: 10px 10px;
+}
+
+.govt-service{
+    padding: 1.5em;
+}
+
+.terms-list{
+    list-style-type: lower-roman;
+}
+
+.terms-condition-heading{
+    font-weight: bold;
+}
+
+.terms-condition-checkbox-wrapper{
+    padding-top: 5px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(0,0,0, 0.7);
+}
+.terms-condition-checkbox{
+    margin-top:9px;
+    padding: 5px;
+}
+.step01-btn-warning-show{
+    display: initial;
+}
+
+.step01-btn-warning-hide{
+    display: none;
+}
+
+.otp-wrapper input {
+    width: 2.5rem !important;
+    justify-content: flex-end !important;
+    text-align: center !important;
+    align-self: flex-end;
+    height: 2.5rem;
+    margin: 0px 1rem;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.msg-span{
+    text-align: center !important;
+    color: #007aad;
+    padding: 15px;
+}
+
+
+/*step-03*/
+.user-type-checkbox{
+    /* display: flex;*/
+}
+
+.breakline{
+    border: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    margin-top: 0px !important;
+}
+
+.digital-certificate-heading{
+    text-align: center;
+    color: white;
+    margin: 10px !important;
+}
