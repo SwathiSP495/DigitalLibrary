@@ -3,7 +3,7 @@ import { Col, Row } from 'reactstrap';
 import Menu from './Menu';
 import Dashboard from "./Dashboard";
 import { Card, Button } from 'react-bootstrap';
-import './header.css';
+import './styles/header.css';
 import Circle from 'react-circle';
 
 

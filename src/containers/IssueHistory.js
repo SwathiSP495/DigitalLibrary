@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import Menu from './Menu';
 import Dashboard from "./Dashboard";
 import { Jumbotron, Button, Carousel } from 'react-bootstrap';
-import './header.css';
+import './styles/header.css';
 import Circle from 'react-circle';
 import Footer from './Footer';
 import { MetadataService } from 'aws-sdk/global';
@@ -12,10 +12,10 @@ import LoaderButton from "../components/LoaderButton";
 
 
 
-const bg = require('./background.jpg');
+const bg = require('./images/issue.jpg');
 const myStyle = {
     width: '100%',
-    height: '450px',
+    height: '400px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',

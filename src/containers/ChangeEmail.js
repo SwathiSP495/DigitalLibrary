@@ -7,7 +7,7 @@ import {
   ControlLabel
 } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import "./ChangeEmail.css";
+import "./styles/ChangeEmail.css";
 
 
 const myImage = require('../components/corp.jpg');

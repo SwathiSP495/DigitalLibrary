@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Auth } from "aws-amplify";
 import { FormGroup, FormControl, ControlLabel } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import "./Login.css";
+import "./styles/Login.css";
 
 const myImage = require('../components/corp.jpg');
 const myStyle = {

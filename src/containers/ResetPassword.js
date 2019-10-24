@@ -9,7 +9,7 @@ import {
   ControlLabel
 } from "react-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import "./ResetPassword.css";
+import "./styles/ResetPassword.css";
 
 const myImage = require('../components/corp.jpg');
 const myStyle = {

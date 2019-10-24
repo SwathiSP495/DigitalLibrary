@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { API } from "aws-amplify";
 import { Link } from "react-router-dom";
 import { PageHeader, ListGroup, ListGroupItem } from "react-bootstrap";
-import "./Home.css";
+import "./styles/Home.css";
 
 
 

@@ -11,7 +11,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { Jumbotron, Button, Carousel } from 'react-bootstrap';
 import LoaderButton from '../components/LoaderButton';
 
-const bg = require('./dashboard.jpg');
+const bg = require('./images/dashboard.jpg');
 const myStyle = {
     width: '100%',
     height: '450px',
@@ -62,7 +62,7 @@ const myStyle = {
 class Dashboard extends Component {
     render() {
         return (
-            <div className="dashboard-wrapper" style={myStyle}>
+            <div className="dashboard-wrapper" >
                 {/* {getList.map((item, index) => (
                     <div className="dashboard-row-wrapper" key={index}>
                         <Row className="dashboard-row">
@@ -121,7 +121,7 @@ class Dashboard extends Component {
                         block
                         type="submit"
                         bsSize="large"
-                        text="More"
+                        text="..."
                     />
                 </LinkContainer>
                 <LinkContainer to="/issuehistory">
@@ -129,7 +129,7 @@ class Dashboard extends Component {
                         block
                         type="submit"
                         bsSize="large"
-                        text="More"
+                        text="..."
                     />
                 </LinkContainer>
                 <LinkContainer to="/issuehistory">
@@ -137,10 +137,10 @@ class Dashboard extends Component {
                         block
                         type="submit"
                         bsSize="large"
-                        text="Library"
+                        text="..."
                     />
                 </LinkContainer>
-                
+               
 
             </div>
         );

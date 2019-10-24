@@ -21,11 +21,12 @@ import IssueHistory from "./containers/IssueHistory";
 import IssuePending from "./containers/IssuePending";
 import StudentUpdate from "./containers/StudentUpdate";
 import SearchCategory from "./containers/SearchCategory";
+import Author from "./containers/Author";
+import SearchBook from "./containers/SearchBook";
 
 import AppliedRoute from "./components/AppliedRoute";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
-import Homme from "./components/Home";
 
 export default ({ childProps }) => (
   <Switch>
@@ -37,12 +38,7 @@ export default ({ childProps }) => (
       component={Login}
       props={childProps}
     />
-    <UnauthenticatedRoute
-      path="/library"
-      exact
-      component={Homme}
-      props={childProps}
-    />
+   
     <UnauthenticatedRoute
       path="/signup"
       exact
@@ -138,6 +134,18 @@ export default ({ childProps }) => (
       path="/library/search"
       exact
       component={SearchCategory}
+      props={childProps}
+    />
+     <AuthenticatedRoute
+      path="/library/author"
+      exact
+      component={Author}
+      props={childProps}
+    />
+    <AuthenticatedRoute
+      path="/book/search"
+      exact
+      component={SearchBook}
       props={childProps}
     />
     <AuthenticatedRoute

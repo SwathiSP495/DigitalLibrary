@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import LoaderButton from "../components/LoaderButton";
-import "./Settings.css";
+import "./styles/Settings.css";
 
 export default class Settings extends Component {
   constructor(props) {

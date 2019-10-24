@@ -3,17 +3,18 @@ import { Col, Row } from 'react-bootstrap';
 import Menu from './Menu';
 import Dashboard from "./Dashboard";
 import { Jumbotron, Button, Carousel } from 'react-bootstrap';
-import './header.css';
+import './styles/header.css';
 import Circle from 'react-circle';
 import Footer from './Footer';
 import { MetadataService } from 'aws-sdk/global';
+import { LinkContainer } from "react-router-bootstrap";
 
 
 
-const bg = require('./background.jpg');
+const bg = require('./images/books.jpg');
 const myStyle = {
     width: '100%',
-    height: '450px',
+    height: '400px',
     backgroundImage: `url(${bg})`,
     backgroundSize: `cover`,
     backgroundColor: 'white',
@@ -49,10 +50,15 @@ const Home = (props) => {
                                                 &nbsp;
                                                 &nbsp;
                                                 <div class="form-group">
-                                            <div class="col-lg-8">
+                                                
+                                                <div class="col-lg-8">
+                                                <LinkContainer to="/book/search">
                                                     <Button as="input" type="submit" value="Search"
                                                     >Search</Button>
+                                                    </LinkContainer>
                                                 </div>
+                                                
+                                          
                                             </div>
 
                                         </div>

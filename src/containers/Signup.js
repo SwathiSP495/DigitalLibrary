@@ -7,7 +7,7 @@ import {
 } from "react-bootstrap";
 import { Auth } from "aws-amplify";
 import LoaderButton from "../components/LoaderButton";
-import "./Signup.css";
+import "./styles/Signup.css";
 
 const myImage = require('../components/corp.jpg');
 const myStyle = {
