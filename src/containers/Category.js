@@ -1,14 +1,10 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { LinkContainer } from "react-router-bootstrap";
-import Menu from './Menu';
 import Dashboard from "./Dashboard";
-import { Jumbotron, Button, Carousel } from 'react-bootstrap';
+import { Jumbotron, Button} from 'react-bootstrap';
 import './styles/header.css';
-import Circle from 'react-circle';
 import Footer from './Footer';
-import { MetadataService } from 'aws-sdk/global';
-import LoaderButton from "../components/LoaderButton";
 
 
 
@@ -48,7 +44,7 @@ const Category = (props) => {
                                                 </div>
                                                 <div class="col-lg-8">
                                                     <label>Description:</label>
-                                                    <input type="book" class="form-control" name="book" placeholder="Description" />
+                            ,                        <input type="book" class="form-control" name="book" placeholder="Description" />
                                                 </div>
                                             </div>
                                             &nbsp;

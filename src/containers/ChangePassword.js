@@ -81,7 +81,7 @@ export default class ChangePassword extends Component {
             />
           </FormGroup>
           <FormGroup bsSize="large" controlId="confirmPassword">
-            <ControlLabel>Confirm Password</ControlLabel>
+            <ControlLabel>Confirm Password</ControlLabel>;
             <FormControl
               type="password"
               onChange={this.handleChange}

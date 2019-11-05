@@ -2,12 +2,8 @@ import React, { Component } from 'react';
 import ReactTable from 'react-table'
 import 'react-table/react-table.css'
 import { Col, Row } from 'react-bootstrap';
-import { LinkContainer } from "react-router-bootstrap";
-import Menu from './Menu';
 import Dashboard from "./Dashboard";
-import { Jumbotron, Button, Carousel } from 'react-bootstrap';
 import './styles/header.css';
-import Circle from 'react-circle';
 import Footer from './Footer';
 
 const bg = require('./images/background.jpg');
